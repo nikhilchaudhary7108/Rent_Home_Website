@@ -1,0 +1,29 @@
+/* starability-basic.css */
+.starability-basic {
+    display: inline-block;
+  }
+  
+  .starability-basic input {
+    display: none;
+  }
+  
+  .starability-basic label {
+    font-size: 2rem;
+    color: lightgray;
+    padding: 0 0.1em;
+    cursor: pointer;
+  }
+  
+  .starability-basic input:checked ~ label {
+    color: gold;
+  }
+  
+  .starability-basic input:hover ~ label {
+    color: gold;
+  }
+  
+  .starability-basic label:hover,
+  .starability-basic label:hover ~ label {
+    color: gold;
+  }
+  

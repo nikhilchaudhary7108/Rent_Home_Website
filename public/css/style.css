@@ -1,0 +1,275 @@
+ body{
+    background-color: burlywood;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height :5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.f-info-links ,.f-info-social,.f-info-cmpy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-social i{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height:7rem;
+    background-color: grey;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/* cards */
+.card{
+    border:none !important;
+    margin-bottom:2rem;
+}
+.card-img-top{
+    border-radius: 2rem;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding:0 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+ opacity: 0;   
+}
+.card-img-overlay:hover{
+    opacity: 0.3;
+    background-color: white;
+}
+.add-btn{
+    background-color: #fe424d !important;
+}
+.heart {
+    font-size: 40px;
+    cursor: pointer;
+    color: grey;
+    transition: all 0.3s ease;
+  }
+
+  .heart.active {
+    color: red;
+  }
+  /* show page */
+.show-img{
+    height:40vh;
+    border: none !important;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+} 
+.edit-btn{
+    background-color: #fe424d !important;
+} 
+/* Review Cards */
+.review-card {
+    padding: 1.2rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.review-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.review-user {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.review-rating {
+    color: #fe424d;
+    font-weight: bold;
+}
+
+.review-comment {
+    font-size: 0.95rem;
+    line-height: 1.4;
+} 
+.star-rating {
+    direction: ltr;
+    display: inline-flex;
+    flex-direction: row;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .star-rating input:checked ~ label {
+    color: #ccc; /* fallback if no JS */
+  }
+  
+  /* Highlight selected stars */
+  .star-rating input:checked + label,
+  .star-rating input:checked + label ~ label {
+    color: gold;
+  }
+  
+  /* Optional hover effect */
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: orange;
+  }
+  /* --- STAR RATING --- */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Highlight stars on hover */
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: gold;
+  }
+  
+  /* Highlight stars on selection */
+  .star-rating input:checked ~ label {
+    color: gold;
+  }
+/* --- LEAVE A REVIEW SECTION --- */
+.leave-review {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Rating Label */
+  .leave-review label.form-label {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  /* Star Rating Container */
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: gold;
+  }
+  
+  .star-rating input:checked ~ label {
+    color: gold;
+  }
+  
+  /* Comment Textarea */
+  textarea[name="review[comment]"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    resize: vertical;
+    min-height: 120px;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Submit Button */
+  .leave-review button[type="submit"] {
+    padding: 0.5rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .leave-review button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+    
